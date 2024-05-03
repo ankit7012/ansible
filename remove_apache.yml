@@ -1,0 +1,10 @@
+---
+
+- hosts : ankit7012@74.225.250.90
+  become: true
+  tasks:
+
+  - name: uninstall apache2 package
+    apt:
+      name: apache2
+      state: absent
